@@ -1,23 +1,48 @@
 
-
-Immutability Advanced
-
-
-// mau nambahin juga untu datanya biar ga cuma 1 doang
-
 langkah-langkah menjalankan project ini:
 1. cek file go.mod ada apa engga kalo ga ada jalanin ini di terminal: 
 	go mod init pestapi
-2. terus jalanin perintah ini di terminal:
+2. terus jalanin perintah ini di terminal buat sinkroniasi module:
 	go mod tidy
 
-3. jalanin perintah ini di terminal:
-	go run main.go
+kalo aman jalanin perintah ini di terminal:
+	= go run main.go
+	nanti bakal muncul http://localhost:8080
 
-test endpoint search fast:
- 	- http://localhost:8080/pests/search-fast?keyword=wereng
-test endpoint erorhandling:
-	http://localhost:8080/pests/get-func?id=1
-test pipeline:
- 	- http://localhost:8080/pests/pipeline
- 	- http://localhost:8080/pests/pipeline?type=Serangga&limit=3
+kalo mau testing endpointnya bisa pake postman atau langsung di browser, 
+ini beberapa endpoint yang bisa di coba:
+- basic endpoint:
+	- http://localhost:8080/pests
+- menampilkan common name dari semua hama note: ini aku pake json yang dikirim all jadi masih 1 doang.
+	- http://localhost:8080/pests/names
+-basic search endpoint:
+	- http://localhost:8080/pests/search?keyword=kopi
+- Search Fast (Concurrency + Goroutine + Channel)
+	- http://localhost:8080/pests/search-fast?keyword=wereng
+- Get Pest by id - rekursi
+	- http://localhost:8080/pests/get?id=1
+- get pest by id (eror handling dengan func result)
+	- eror ditemukan : http://localhost:8080/pests/get-func?id=1
+	- eror tidak ditemukan :  http://localhost:8080/pests/get-func?id=99
+- add pest (side effect handler)
+	- http://localhost:8080/pests/add
+	contoh:
+	{
+		"id": 2,
+		"common_name": "Hama Uji Coba",
+		"scientific_name": "Testus Testing",
+		"pest_type": "Serangga",
+		"affected_parts": ["Daun"],
+		"description": "Hama untuk testing",
+		"symptoms": ["Daun rusak"],
+		"image_url": "http://example.com/test.jpg",
+		"control_methods": {
+			"organic": ["Semprot air"],
+			"chemical": ["Insektisida test"]
+		}
+	}
+- Pipeline (Map + Filter + Sort + Limit + Reduce)
+	- default : http://localhost:8080/pests/pipeline
+	- filter + limit : http://localhost:8080/pests/pipeline?type=fungi&limit=3
+- stats reduce : http://localhost:8080/pests/stats
+-immutable : http://localhost:8080/pests/immutable-demo
