@@ -1,0 +1,23 @@
+
+
+Immutability Advanced
+
+
+// mau nambahin juga untu datanya biar ga cuma 1 doang
+
+langkah-langkah menjalankan project ini:
+1. cek file go.mod ada apa engga kalo ga ada jalanin ini di terminal: 
+	go mod init pestapi
+2. terus jalanin perintah ini di terminal:
+	go mod tidy
+
+3. jalanin perintah ini di terminal:
+	go run main.go
+
+test endpoint search fast:
+ 	- http://localhost:8080/pests/search-fast?keyword=wereng
+test endpoint erorhandling:
+	http://localhost:8080/pests/get-func?id=1
+test pipeline:
+ 	- http://localhost:8080/pests/pipeline
+ 	- http://localhost:8080/pests/pipeline?type=Serangga&limit=3
