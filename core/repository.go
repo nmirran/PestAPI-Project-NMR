@@ -2,7 +2,6 @@ package core
 
 import (
 	"errors"
-	"pestapi/data"
 	"pestapi/model"
 )
 
@@ -12,22 +11,31 @@ type PestRepo struct {
 	FindByID func(int) (model.Pest, error)
 	Filter   func(func(model.Pest) bool) []model.Pest
 }
+var PestStore PestRepo
 
-var PestStore = NewPestRepo(data.Pests)
+func init() {
 
-func NewPestRepo(initial []model.Pest) PestRepo {
-	// immutable slice
-	pests := append([]model.Pest(nil), initial...)
-	// non-recursive
+	pests, err := LoadPestsFromJSON("data/pests.json")
+	if err != nil {
+		panic("FAILED TO LOAD DATASET: " + err.Error())
+	}
+
+	// closure untuk menyimpan state secara private
+	var pestState = append([]model.Pest(nil), pests...)
+
+	// immutable return
 	getAll := func() []model.Pest {
-		return append([]model.Pest(nil), pests...)
-	}
-	add := func(p model.Pest) {
-		pests = append(pests, p)
+		return append([]model.Pest(nil), pestState...)
 	}
 
-	// recursvie
+	// side effect: add
+	add := func(p model.Pest) {
+		pestState = append(pestState, p)
+	}
+
+	// find with recursive
 	var findRecursive func([]model.Pest, int, int) (model.Pest, error)
+
 	findRecursive = func(arr []model.Pest, id int, i int) (model.Pest, error) {
 		if i >= len(arr) {
 			return model.Pest{}, errors.New("not found")
@@ -42,7 +50,7 @@ func NewPestRepo(initial []model.Pest) PestRepo {
 		return findRecursive(getAll(), id, 0)
 	}
 
-	// hof
+	// hof-filter
 	filter := func(pred func(model.Pest) bool) []model.Pest {
 		result := []model.Pest{}
 		for _, p := range getAll() {
@@ -52,8 +60,7 @@ func NewPestRepo(initial []model.Pest) PestRepo {
 		}
 		return result
 	}
-
-	return PestRepo{
+	PestStore = PestRepo{
 		GetAll:   getAll,
 		Add:      add,
 		FindByID: findByID,
@@ -61,6 +68,7 @@ func NewPestRepo(initial []model.Pest) PestRepo {
 	}
 }
 
+// Functional error handling
 func (repo PestRepo) FindByID_Func(id int) Result[model.Pest] {
 	p, err := repo.FindByID(id)
 	if err != nil {
