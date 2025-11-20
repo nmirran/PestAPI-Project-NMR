@@ -65,3 +65,28 @@ func ReduceSymptoms(pests []model.Pest) int {
 	}
 	return total
 }
+
+func PipelineAdvanced(pests []model.Pest, typeVal, part, sortField, order string, limit int) []model.Pest {
+
+    // filter by pest type
+    if typeVal != "" {
+        pests = FilterByTypeValue(typeVal)
+    }
+
+    // filter by plant part
+    if part != "" {
+        pests = FilterByPart(part)
+    }
+
+    // sort
+    if sortField != "" {
+        pests = SortPests(pests, sortField, order)
+    }
+
+    // limit
+    if limit > 0 && limit < len(pests) {
+        pests = pests[:limit]
+    }
+
+    return pests
+}

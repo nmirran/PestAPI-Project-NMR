@@ -46,3 +46,13 @@ ini beberapa endpoint yang bisa di coba:
 	- filter + limit : http://localhost:8080/pests/pipeline?type=fungi&limit=3
 - stats reduce : http://localhost:8080/pests/stats
 -immutable : http://localhost:8080/pests/immutable-demo
+- pipeline advanced : http://localhost:8080/pests/pipeline-advanced?part=daun&type=serangga&limit=2
+- filter by part : http://localhost:8080/pests/by-part?part=daun
+- filter by type : http://localhost:8080/pests/by-type?type=serangga
+- sort by common name : http://localhost:8080/pests/sorted?order=asc
+- delete pest by id : http://localhost:8080/pests/delete?id=2
+- update pest by id : http://localhost:8080/pests/update?id=3
+- get random pest : http://localhost:8080/pests/random
+- search by scientific name : http://localhost:8080/pests/search-scientific?keyword=hemileia
+- stats full : http://localhost:8080/pests/stats/full
+- search concurrent : http://localhost:8080/pests/search-concurrent?keyword=kopi

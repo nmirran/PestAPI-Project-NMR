@@ -142,3 +142,95 @@ func ImmutableDemoHandler(w http.ResponseWriter, r *http.Request) {
 		"deep_copy":        deepcopy,
 	})
 }
+
+// FILTER BY PART
+func FilterByPartHandler(w http.ResponseWriter, r *http.Request) {
+    part := r.URL.Query().Get("part")
+    result := core.FilterByPart(part)
+    json.NewEncoder(w).Encode(result)
+}
+
+// FILTER BY TYPE
+func FilterByTypeHandler(w http.ResponseWriter, r *http.Request) {
+    t := r.URL.Query().Get("type")
+    result := core.FilterByTypeValue(t)
+    json.NewEncoder(w).Encode(result)
+}
+
+// SORT
+func SortHandler(w http.ResponseWriter, r *http.Request) {
+    field := r.URL.Query().Get("field")
+    order := r.URL.Query().Get("order")
+
+    pests := core.PestStore.GetAll()
+    result := core.SortPests(pests, field, order)
+
+    json.NewEncoder(w).Encode(result)
+}
+
+// DELETE
+func DeletePestHandler(w http.ResponseWriter, r *http.Request) {
+    idStr := r.URL.Query().Get("id")
+    id, _ := strconv.Atoi(idStr)
+
+    core.DeletePest(id)
+    json.NewEncoder(w).Encode(map[string]string{"message": "deleted"})
+}
+
+// UPDATE MUTABLE
+func UpdatePestHandler(w http.ResponseWriter, r *http.Request) {
+    idStr := r.URL.Query().Get("id")
+    id, _ := strconv.Atoi(idStr)
+
+    var payload model.Pest
+    json.NewDecoder(r.Body).Decode(&payload)
+
+    core.UpdatePest(id, payload)
+
+    json.NewEncoder(w).Encode(map[string]string{"message": "updated"})
+}
+
+// SEARCH SCIENTIFIC
+func SearchScientificHandler(w http.ResponseWriter, r *http.Request) {
+    keyword := r.URL.Query().Get("key")
+    result := core.SearchScientific(keyword)
+    json.NewEncoder(w).Encode(result)
+}
+
+// RANDOM
+func RandomPestHandler(w http.ResponseWriter, r *http.Request) {
+    p := core.RandomPest()
+    json.NewEncoder(w).Encode(p)
+}
+
+// FULL STATS
+func StatsFullHandler(w http.ResponseWriter, r *http.Request) {
+    s := core.FullStats()
+    json.NewEncoder(w).Encode(s)
+}
+
+// CONCURRENT OPTIMIZED
+func SearchConcurrentHandler(w http.ResponseWriter, r *http.Request) {
+    keyword := r.URL.Query().Get("keyword")
+    result := core.SearchConcurrentOptimized(keyword)
+    json.NewEncoder(w).Encode(result)
+}
+
+// PIPELINE ADVANCED
+func PipelineAdvancedHandler(w http.ResponseWriter, r *http.Request) {
+    t := r.URL.Query().Get("type")
+    part := r.URL.Query().Get("part")
+    sortField := r.URL.Query().Get("sort")
+    order := r.URL.Query().Get("order")
+    limitStr := r.URL.Query().Get("limit")
+
+    limit := 0
+    if limitStr != "" {
+        limit, _ = strconv.Atoi(limitStr)
+    }
+
+    pests := core.PestStore.GetAll()
+    result := core.PipelineAdvanced(pests, t, part, sortField, order, limit)
+
+    json.NewEncoder(w).Encode(result)
+}

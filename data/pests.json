@@ -1,1194 +1,489 @@
 [
     {
         "id": 1,
-        "common_name": "Hama_-3_10",
-        "scientific_name": "Species_0_0",
+        "common_name": "Nematoda Akar Kopi",
+        "scientific_name": "Pratylenchus coffeae",
         "pest_type": "Nematoda",
-        "affected_parts": [
-            "Buah",
-            "Akar",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-3.110904235282147, 10.86656431270726]",
-        "symptoms": [
-            "Symptom based on feature A: -3.110904235282147",
-            "Symptom based on feature B: 10.86656431270726"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Akar"],
+        "description": "Nematoda parasit yang menyerang akar kopi, menyebabkan kerusakan jaringan akar.",
+        "symptoms": ["Akar menghitam", "Pertumbuhan terhambat", "Daun menguning"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Rotasi tanaman", "Pupuk organik"],
+            "chemical": ["Nematicide"]
         }
     },
     {
         "id": 2,
-        "common_name": "Hama_-2_7",
-        "scientific_name": "Species_0_1",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-2.300334028047995, 7.054616004318546]",
-        "symptoms": [
-            "Symptom based on feature A: -2.300334028047995",
-            "Symptom based on feature B: 7.054616004318546"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Busuk Akar Hitam",
+        "scientific_name": "Rosellinia bunodes",
+        "pest_type": "Jamur",
+        "affected_parts": ["Akar"],
+        "description": "Penyakit busuk akar yang menyebabkan kematian tanaman.",
+        "symptoms": ["Akar hitam busuk", "Tanaman layu mendadak"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Perbaikan drainase"],
+            "chemical": ["Fungisida sistemik"]
         }
     },
+
+
     {
         "id": 3,
-        "common_name": "Hama_3_1",
-        "scientific_name": "Species_1_2",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [3.161356845860674, 1.2533254755460232]",
-        "symptoms": [
-            "Symptom based on feature A: 3.161356845860674",
-            "Symptom based on feature B: 1.2533254755460232"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Nematoda Simpul Akar",
+        "scientific_name": "Meloidogyne exigua",
+        "pest_type": "Nematoda",
+        "affected_parts": ["Perakaran dangkal"],
+        "description": "Cacing nematoda pembentuk bintil pada akar dangkal.",
+        "symptoms": ["Pembengkakan akar dangkal", "Tanaman kerdil"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Kompos matang"],
+            "chemical": ["Karbofuran"]
         }
     },
+
+
+
     {
         "id": 4,
-        "common_name": "Hama_-9_-6",
-        "scientific_name": "Species_2_3",
+        "common_name": "Penggerek Batang Kopi",
+        "scientific_name": "Xylotrechus quadripes",
         "pest_type": "Serangga",
-        "affected_parts": [
-            "Daun",
-            "Buah",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-9.499372295241015, -6.058207088900723]",
-        "symptoms": [
-            "Symptom based on feature A: -9.499372295241015",
-            "Symptom based on feature B: -6.058207088900723"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Batang utama"],
+        "description": "Serangga yang menggerek batang dan merusak jaringan kayu.",
+        "symptoms": ["Serbuk kayu keluar dari lubang", "Cabang mati"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Perangkap feromon"],
+            "chemical": ["Klorpirifos"]
         }
     },
     {
         "id": 5,
-        "common_name": "Hama_-3_7",
-        "scientific_name": "Species_0_4",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar",
-            "Buah",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-3.417221698573961, 7.60198242686303]",
-        "symptoms": [
-            "Symptom based on feature A: -3.417221698573961",
-            "Symptom based on feature B: 7.60198242686303"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Kanker Batang Kopi (Upas Merah)",
+        "scientific_name": "Corticium salmonicolor",
+        "pest_type": "Jamur",
+        "affected_parts": ["Batang utama"],
+        "description": "Penyakit jamur yang menyebabkan kerusakan kulit batang dan kematian cabang.",
+        "symptoms": ["Kerak merah muda", "Kulit batang terkelupas"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pemangkasan"],
+            "chemical": ["Fungisida tembaga"]
         }
     },
+
+
+
     {
         "id": 6,
-        "common_name": "Hama_-1_8",
-        "scientific_name": "Species_0_5",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Akar",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-1.0435488541311961, 8.788509827711787]",
-        "symptoms": [
-            "Symptom based on feature A: -1.0435488541311961",
-            "Symptom based on feature B: 8.788509827711787"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Dieback Kopi",
+        "scientific_name": "Fusarium spp.",
+        "pest_type": "Jamur",
+        "affected_parts": ["Cabang primer", "Cabang sekunder"],
+        "description": "Penyakit yang menyebabkan kematian cabang bertahap.",
+        "symptoms": ["Cabang mengering", "Daun berguguran"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Sanitasi kebun"],
+            "chemical": ["Fungisida sistemik"]
         }
     },
     {
         "id": 7,
-        "common_name": "Hama_-3_9",
-        "scientific_name": "Species_0_6",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Buah",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-3.053580347577933, 9.125208717908187]",
-        "symptoms": [
-            "Symptom based on feature A: -3.053580347577933",
-            "Symptom based on feature B: 9.125208717908187"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Kepik Pengisap Cabang",
+        "scientific_name": "Helopeltis antonii",
+        "pest_type": "Serangga",
+        "affected_parts": ["Cabang primer", "Pucuk"],
+        "description": "Serangga penghisap getah cabang muda.",
+        "symptoms": ["Bercak hitam", "Pucuk mengering"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Neem oil"],
+            "chemical": ["Imidakloprid"]
         }
     },
+
+
+
     {
         "id": 8,
-        "common_name": "Hama_-2_7",
-        "scientific_name": "Species_0_7",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Daun",
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [-2.5226948477906843, 7.956575199242421]",
-        "symptoms": [
-            "Symptom based on feature A: -2.5226948477906843",
-            "Symptom based on feature B: 7.956575199242421"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Bercak Daun Cercospora",
+        "scientific_name": "Cercospora coffeicola",
+        "pest_type": "Jamur",
+        "affected_parts": ["Daun muda"],
+        "description": "Penyakit bercak daun yang sering menyerang daun muda.",
+        "symptoms": ["Bercak coklat", "Nekrosis"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pemupukan berimbang"],
+            "chemical": ["Mankozeb"]
         }
     },
     {
         "id": 9,
-        "common_name": "Hama_5_2",
-        "scientific_name": "Species_1_8",
+        "common_name": "Kutu Hijau Kopi",
+        "scientific_name": "Coccus viridis",
         "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [5.670878358724052, 2.904449803056931]",
-        "symptoms": [
-            "Symptom based on feature A: 5.670878358724052",
-            "Symptom based on feature B: 2.904449803056931"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Daun muda"],
+        "description": "Kutu penghisap cairan daun, menyebabkan pertumbuhan lambat.",
+        "symptoms": ["Daun keriting", "Honeydew (getah lengket)"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Larutan sabun"],
+            "chemical": ["Deltametrin"]
         }
     },
+
+
+
     {
         "id": 10,
-        "common_name": "Hama_-7_-7",
-        "scientific_name": "Species_2_9",
+        "common_name": "Karat Daun Kopi",
+        "scientific_name": "Hemileia vastatrix",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-7.5816802850286225, -7.2077717398737144]",
-        "symptoms": [
-            "Symptom based on feature A: -7.5816802850286225",
-            "Symptom based on feature B: -7.2077717398737144"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Daun tua"],
+        "description": "Penyakit paling merusak pada daun tua kopi.",
+        "symptoms": ["Bercak oranye", "Daun gugur"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Naungan optimal"],
+            "chemical": ["Fungisida tembaga"]
         }
     },
     {
         "id": 11,
-        "common_name": "Hama_5_2",
-        "scientific_name": "Species_1_10",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [5.378345416223512, 2.1445379651307026]",
-        "symptoms": [
-            "Symptom based on feature A: 5.378345416223512",
-            "Symptom based on feature B: 2.1445379651307026"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Tungau Merah Kopi",
+        "scientific_name": "Oligonychus coffeae",
+        "pest_type": "Tungau",
+        "affected_parts": ["Daun tua"],
+        "description": "Tungau perusak jaringan daun tua.",
+        "symptoms": ["Daun menguning", "Bercak merah"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Siram air"],
+            "chemical": ["Abamektin"]
         }
     },
+
+
+
     {
         "id": 12,
-        "common_name": "Hama_4_0",
-        "scientific_name": "Species_1_11",
+        "common_name": "Busuk Bunga Kopi",
+        "scientific_name": "Colletotrichum gloeosporioides",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang",
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [4.983497125796562, 0.21012952857799805]",
-        "symptoms": [
-            "Symptom based on feature A: 4.983497125796562",
-            "Symptom based on feature B: 0.21012952857799805"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Bunga kopi"],
+        "description": "Penyakit yang menyerang bunga kopi sebelum pembuahan.",
+        "symptoms": ["Bunga coklat", "Bunga rontok"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pemangkasan"],
+            "chemical": ["Fungisida sistemik"]
         }
     },
     {
         "id": 13,
-        "common_name": "Hama_3_0",
-        "scientific_name": "Species_1_12",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [3.533543862222073, 0.7769630598600612]",
-        "symptoms": [
-            "Symptom based on feature A: 3.533543862222073",
-            "Symptom based on feature B: 0.7769630598600612"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Thrips Kopi",
+        "scientific_name": "Diarthrothrips coffeae",
+        "pest_type": "Serangga",
+        "affected_parts": ["Bunga kopi"],
+        "description": "Hama kecil yang merusak bunga dan daun.",
+        "symptoms": ["Bunga kusam", "Kelopak tergores"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Feromon"],
+            "chemical": ["Spinetoram"]
         }
     },
+
+
+
     {
         "id": 14,
-        "common_name": "Hama_-2_7",
-        "scientific_name": "Species_0_13",
+        "common_name": "Busuk Buah Phoma",
+        "scientific_name": "Phoma costarricensis",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Daun",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-2.4416694183648264, 7.589537941984865]",
-        "symptoms": [
-            "Symptom based on feature A: -2.4416694183648264",
-            "Symptom based on feature B: 7.589537941984865"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Buah muda"],
+        "description": "Penyakit yang menyerang buah muda sebelum matang.",
+        "symptoms": ["Bercak hitam", "Buah rontok"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Sanitasi kebun"],
+            "chemical": ["Fungisida sistemik"]
         }
     },
     {
         "id": 15,
-        "common_name": "Hama_4_3",
-        "scientific_name": "Species_1_14",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Akar",
-            "Batang",
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [4.6040527971181495, 3.537813339754738]",
-        "symptoms": [
-            "Symptom based on feature A: 4.6040527971181495",
-            "Symptom based on feature B: 3.537813339754738"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Penggerek Buah Kopi (PBKo)",
+        "scientific_name": "Hypothenemus hampei",
+        "pest_type": "Serangga",
+        "affected_parts": ["Buah matang"],
+        "description": "Hama paling berbahaya yang menggerek buah matang kopi.",
+        "symptoms": ["Lubang kecil di buah", "Biji rusak"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Perangkap alkohol"],
+            "chemical": ["Fipronil"]
         }
     },
+
+
+
     {
         "id": 16,
-        "common_name": "Hama_-1_7",
-        "scientific_name": "Species_0_15",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Batang",
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [-1.686652710949561, 7.793442478227299]",
-        "symptoms": [
-            "Symptom based on feature A: -1.686652710949561",
-            "Symptom based on feature B: 7.793442478227299"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Cendawan Biji Kopi",
+        "scientific_name": "Aspergillus spp.",
+        "pest_type": "Jamur",
+        "affected_parts": ["Biji kopi (post-harvest)"],
+        "description": "Penyakit pascapanen yang menyerang biji kopi.",
+        "symptoms": ["Biji berjamur", "Aroma busuk"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pengeringan cepat"],
+            "chemical": ["Fumigasi"]
         }
     },
+
     {
         "id": 17,
-        "common_name": "Hama_-7_-7",
-        "scientific_name": "Species_2_16",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Buah",
-            "Daun",
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [-7.22234170767804, -7.682386862497566]",
-        "symptoms": [
-            "Symptom based on feature A: -7.22234170767804",
-            "Symptom based on feature B: -7.682386862497566"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Penyakit Layu Bakteri Kopi",
+        "scientific_name": "Ralstonia solanacearum",
+        "pest_type": "Bakteri",
+        "affected_parts": ["Akar", "Batang utama"],
+        "description": "Bakteri yang menyebabkan layu cepat pada tanaman kopi.",
+        "symptoms": ["Daun layu tiba-tiba", "Batang menghitam"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Sanitasi kebun"],
+            "chemical": ["Bakterisida tembaga"]
         }
     },
+
     {
         "id": 18,
-        "common_name": "Hama_-6_-7",
-        "scientific_name": "Species_2_17",
+        "common_name": "Busuk Kerah",
+        "scientific_name": "Phytophthora cinnamomi",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Akar",
-            "Buah",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-6.792580122913098, -7.179116943741814]",
-        "symptoms": [
-            "Symptom based on feature A: -6.792580122913098",
-            "Symptom based on feature B: -7.179116943741814"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Perakaran dangkal", "Batang bawah"],
+        "description": "Jamur penyebab busuk pangkal batang kopi.",
+        "symptoms": ["Batang bawah retak", "Akar membusuk"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Perbaikan drainase"],
+            "chemical": ["Fosetyl-Al"]
         }
     },
+
     {
         "id": 19,
-        "common_name": "Hama_4_2",
-        "scientific_name": "Species_1_18",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [4.5678687146477674, 2.976702581832756]",
-        "symptoms": [
-            "Symptom based on feature A: 4.5678687146477674",
-            "Symptom based on feature B: 2.976702581832756"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Penyakit Jamur Upas Putih",
+        "scientific_name": "Rigidoporus microporus",
+        "pest_type": "Jamur",
+        "affected_parts": ["Batang utama"],
+        "description": "Jamur yang membentuk miselium putih pada batang.",
+        "symptoms": ["Miselium putih seperti kapas", "Batang busuk"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pangkas bagian terinfeksi"],
+            "chemical": ["Fungisida sistemik"]
         }
     },
+
     {
         "id": 20,
-        "common_name": "Hama_-4_8",
-        "scientific_name": "Species_0_19",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Batang",
-            "Akar",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-4.234115455565783, 8.45199859895735]",
-        "symptoms": [
-            "Symptom based on feature A: -4.234115455565783",
-            "Symptom based on feature B: 8.45199859895735"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Kutu Kebul Kopi",
+        "scientific_name": "Bemisia tabaci",
+        "pest_type": "Serangga",
+        "affected_parts": ["Daun muda", "Daun tua"],
+        "description": "Serangga penyebab klorosis daun dan menularkan virus.",
+        "symptoms": ["Daun menguning", "Jelaga hitam"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Perangkap kuning"],
+            "chemical": ["Abamektin"]
         }
     },
+
     {
         "id": 21,
-        "common_name": "Hama_4_2",
-        "scientific_name": "Species_1_20",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Batang",
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [4.971142267631666, 2.948714811063091]",
-        "symptoms": [
-            "Symptom based on feature A: 4.971142267631666",
-            "Symptom based on feature B: 2.948714811063091"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Virus Daun Keriting Kopi",
+        "scientific_name": "Coffee curl virus",
+        "pest_type": "Virus",
+        "affected_parts": ["Daun muda"],
+        "description": "Virus yang menyebabkan daun keriting dan pertumbuhan terhambat.",
+        "symptoms": ["Daun keriting", "Ukuran daun mengecil"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pengendalian kutu daun"],
+            "chemical": ["Insektisida ringan"]
         }
     },
+
     {
         "id": 22,
-        "common_name": "Hama_-7_-6",
-        "scientific_name": "Species_2_21",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-7.4093873949183084, -6.366842160162591]",
-        "symptoms": [
-            "Symptom based on feature A: -7.4093873949183084",
-            "Symptom based on feature B: -6.366842160162591"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Tungau Kuning Kopi",
+        "scientific_name": "Polyphagotarsonemus latus",
+        "pest_type": "Tungau",
+        "affected_parts": ["Daun muda", "Pucuk"],
+        "description": "Tungau kecil yang merusak daun muda dan pucuk.",
+        "symptoms": ["Daun keriting", "Pucuk menghitam"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Aplikasi ekstrak bawang putih"],
+            "chemical": ["Propargite"]
         }
     },
+
     {
         "id": 23,
-        "common_name": "Hama_-3_9",
-        "scientific_name": "Species_0_22",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Akar",
-            "Daun",
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [-3.6601912004750528, 9.389984146543993]",
-        "symptoms": [
-            "Symptom based on feature A: -3.6601912004750528",
-            "Symptom based on feature B: 9.389984146543993"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Bercak Daun Minang",
+        "scientific_name": "Mycena citricolor",
+        "pest_type": "Jamur",
+        "affected_parts": ["Daun tua", "Daun muda"],
+        "description": "Penyakit bercak yang meninggalkan pola bulat bersusun.",
+        "symptoms": ["Bercak konsentris", "Daun rontok"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pemangkasan"],
+            "chemical": ["Klorotalonil"]
         }
     },
+
     {
         "id": 24,
-        "common_name": "Hama_-6_-6",
-        "scientific_name": "Species_2_23",
+        "common_name": "Lalat Buah Kopi",
+        "scientific_name": "Ceratitis capitata",
         "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-6.583506914086694, -6.6190543210960575]",
-        "symptoms": [
-            "Symptom based on feature A: -6.583506914086694",
-            "Symptom based on feature B: -6.6190543210960575"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Buah muda", "Buah matang"],
+        "description": "Lalat buah yang bertelur pada buah kopi.",
+        "symptoms": ["Buah busuk", "Larva di dalam buah"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Perangkap protein"],
+            "chemical": ["Spinosad"]
         }
     },
+
     {
         "id": 25,
-        "common_name": "Hama_-2_7",
-        "scientific_name": "Species_0_24",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-2.267235351486716, 7.101005883540523]",
-        "symptoms": [
-            "Symptom based on feature A: -2.267235351486716",
-            "Symptom based on feature B: 7.101005883540523"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Anthracnose Buah",
+        "scientific_name": "Colletotrichum kahawae",
+        "pest_type": "Jamur",
+        "affected_parts": ["Buah muda", "Buah matang"],
+        "description": "Jamur penyebab bercak hitam besar pada buah.",
+        "symptoms": ["Buah menghitam", "Buah mengeras"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Sanitasi lahan"],
+            "chemical": ["Azoxystrobin"]
         }
     },
+
     {
         "id": 26,
-        "common_name": "Hama_-7_-6",
-        "scientific_name": "Species_2_25",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [-7.099299078988782, -6.5229970217642]",
-        "symptoms": [
-            "Symptom based on feature A: -7.099299078988782",
-            "Symptom based on feature B: -6.5229970217642"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Bakteri Busuk Buah",
+        "scientific_name": "Pseudomonas syringae",
+        "pest_type": "Bakteri",
+        "affected_parts": ["Buah matang"],
+        "description": "Bakteri penyebab busuk buah pada fase matang.",
+        "symptoms": ["Buah berlendir", "Aroma asam"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Panen cepat"],
+            "chemical": ["Bakterisida tembaga"]
         }
     },
+
     {
         "id": 27,
-        "common_name": "Hama_-3_9",
-        "scientific_name": "Species_0_26",
+        "common_name": "Busuk Biji Hitam",
+        "scientific_name": "Rhizopus stolonifer",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Daun",
-            "Buah",
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [-3.5220287433871738, 9.328533460793595]",
-        "symptoms": [
-            "Symptom based on feature A: -3.5220287433871738",
-            "Symptom based on feature B: 9.328533460793595"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Biji kopi (post-harvest)"],
+        "description": "Jamur yang menyebabkan biji hitam dan berjamur.",
+        "symptoms": ["Biji menghitam", "Tekstur lembab"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pengeringan cepat"],
+            "chemical": ["Fumigasi"]
         }
     },
+
     {
         "id": 28,
-        "common_name": "Hama_3_1",
-        "scientific_name": "Species_1_27",
+        "common_name": "Penyakit Kulit Buah Kopi",
+        "scientific_name": "Monilia spp.",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [3.8006613130054627, 1.6639573080895174]",
-        "symptoms": [
-            "Symptom based on feature A: 3.8006613130054627",
-            "Symptom based on feature B: 1.6639573080895174"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Kulit buah", "Buah matang"],
+        "description": "Jamur yang menyerang kulit buah kopi.",
+        "symptoms": ["Kulit buah pecah", "Bercak putih"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Rotasi tanaman"],
+            "chemical": ["Fungisida tembaga"]
         }
     },
+
     {
         "id": 29,
-        "common_name": "Hama_-6_-7",
-        "scientific_name": "Species_2_28",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar",
-            "Buah",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-6.874513734508809, -7.114696726651093]",
-        "symptoms": [
-            "Symptom based on feature A: -6.874513734508809",
-            "Symptom based on feature B: -7.114696726651093"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Bercak Hitam Daun",
+        "scientific_name": "Alternaria alternata",
+        "pest_type": "Jamur",
+        "affected_parts": ["Daun tua"],
+        "description": "Jamur penyebab bercak hitam pada daun tua.",
+        "symptoms": ["Bercak gelap", "Daun mengering"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pemangkasan"],
+            "chemical": ["Mankozeb"]
         }
     },
+
     {
         "id": 30,
-        "common_name": "Hama_4_3",
-        "scientific_name": "Species_1_29",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Daun",
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [4.1792400652683135, 3.0302919101596477]",
-        "symptoms": [
-            "Symptom based on feature A: 4.1792400652683135",
-            "Symptom based on feature B: 3.0302919101596477"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "common_name": "Busuk Buah Pascapanen",
+        "scientific_name": "Penicillium spp.",
+        "pest_type": "Jamur",
+        "affected_parts": ["Biji kopi (post-harvest)"],
+        "description": "Jamur pascapanen yang tumbuh pada kondisi lembab.",
+        "symptoms": ["Biji kehijauan", "Aroma apek"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Gudang kering"],
+            "chemical": ["Fumigasi ringan"]
         }
     },
+
     {
         "id": 31,
-        "common_name": "Hama_-7_-7",
-        "scientific_name": "Species_2_30",
+        "common_name": "Kutu Perisai Kopi",
+        "scientific_name": "Saissetia coffeae",
         "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [-7.688120794044457, -7.381866636860483]",
-        "symptoms": [
-            "Symptom based on feature A: -7.688120794044457",
-            "Symptom based on feature B: -7.381866636860483"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Daun tua", "Cabang sekunder"],
+        "description": "Serangga pengisap yang menghasilkan jelaga hitam.",
+        "symptoms": ["Daun menguning", "Jelaga pada daun"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Sabun insektisida"],
+            "chemical": ["Imidakloprid"]
         }
     },
+
     {
         "id": 32,
-        "common_name": "Hama_5_3",
-        "scientific_name": "Species_1_31",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [5.452404658622299, 3.3294097125115547]",
-        "symptoms": [
-            "Symptom based on feature A: 5.452404658622299",
-            "Symptom based on feature B: 3.3294097125115547"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 33,
-        "common_name": "Hama_4_1",
-        "scientific_name": "Species_1_32",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Akar",
-            "Buah",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [4.524230553839861, 1.6720659883514433]",
-        "symptoms": [
-            "Symptom based on feature A: 4.524230553839861",
-            "Symptom based on feature B: 1.6720659883514433"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 34,
-        "common_name": "Hama_0_9",
-        "scientific_name": "Species_0_33",
+        "common_name": "Jamur Aspergillus Hitam",
+        "scientific_name": "Aspergillus niger",
         "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-0.9299848075453587, 9.78172085735123]",
-        "symptoms": [
-            "Symptom based on feature A: -0.9299848075453587",
-            "Symptom based on feature B: 9.78172085735123"
-        ],
-        "image_url": "https://example.com/image.jpg",
+        "affected_parts": ["Biji kopi (post-harvest)"],
+        "description": "Jamur penghasil aflatoksin pada biji pascapanen.",
+        "symptoms": ["Biji hitam pekat", "Aroma tidak sedap"],
+        "image_url": "",
         "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 35,
-        "common_name": "Hama_5_3",
-        "scientific_name": "Species_1_34",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [5.001274441736515, 3.511206250406701]",
-        "symptoms": [
-            "Symptom based on feature A: 5.001274441736515",
-            "Symptom based on feature B: 3.511206250406701"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 36,
-        "common_name": "Hama_-7_-6",
-        "scientific_name": "Species_2_35",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-7.040912902817279, -6.476058736461408]",
-        "symptoms": [
-            "Symptom based on feature A: -7.040912902817279",
-            "Symptom based on feature B: -6.476058736461408"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 37,
-        "common_name": "Hama_-6_-5",
-        "scientific_name": "Species_2_36",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Batang",
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [-6.78254964180323, -5.911464602743058]",
-        "symptoms": [
-            "Symptom based on feature A: -6.78254964180323",
-            "Symptom based on feature B: -5.911464602743058"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 38,
-        "common_name": "Hama_4_1",
-        "scientific_name": "Species_1_37",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [4.963962805622897, 1.5880874035244155]",
-        "symptoms": [
-            "Symptom based on feature A: 4.963962805622897",
-            "Symptom based on feature B: 1.5880874035244155"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 39,
-        "common_name": "Hama_4_1",
-        "scientific_name": "Species_1_38",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Buah",
-            "Daun",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [4.160704598382812, 1.787510707276915]",
-        "symptoms": [
-            "Symptom based on feature A: 4.160704598382812",
-            "Symptom based on feature B: 1.787510707276915"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 40,
-        "common_name": "Hama_-8_-7",
-        "scientific_name": "Species_2_39",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [-8.294997933201685, -7.300754916041305]",
-        "symptoms": [
-            "Symptom based on feature A: -8.294997933201685",
-            "Symptom based on feature B: -7.300754916041305"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 41,
-        "common_name": "Hama_-7_-8",
-        "scientific_name": "Species_2_40",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Akar",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-7.271735344283428, -8.343624541408065]",
-        "symptoms": [
-            "Symptom based on feature A: -7.271735344283428",
-            "Symptom based on feature B: -8.343624541408065"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 42,
-        "common_name": "Hama_-3_9",
-        "scientific_name": "Species_0_41",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-3.837383671951181, 9.211147364067445]",
-        "symptoms": [
-            "Symptom based on feature A: -3.837383671951181",
-            "Symptom based on feature B: 9.211147364067445"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 43,
-        "common_name": "Hama_-6_-8",
-        "scientific_name": "Species_2_42",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Buah",
-            "Daun",
-            "Akar"
-        ],
-        "description": "Generated pest with blob features [-6.787866414615768, -8.867678507876839]",
-        "symptoms": [
-            "Symptom based on feature A: -6.787866414615768",
-            "Symptom based on feature B: -8.867678507876839"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 44,
-        "common_name": "Hama_-2_8",
-        "scientific_name": "Species_0_43",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Buah",
-            "Akar",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-2.9726153158652124, 8.548556374628065]",
-        "symptoms": [
-            "Symptom based on feature A: -2.9726153158652124",
-            "Symptom based on feature B: 8.548556374628065"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 45,
-        "common_name": "Hama_-2_9",
-        "scientific_name": "Species_0_44",
-        "pest_type": "Serangga",
-        "affected_parts": [
-            "Buah"
-        ],
-        "description": "Generated pest with blob features [-2.978672008987702, 9.556846171784287]",
-        "symptoms": [
-            "Symptom based on feature A: -2.978672008987702",
-            "Symptom based on feature B: 9.556846171784287"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 46,
-        "common_name": "Hama_-5_-7",
-        "scientific_name": "Species_2_45",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [-5.401733146409754, -7.398379811549594]",
-        "symptoms": [
-            "Symptom based on feature A: -5.401733146409754",
-            "Symptom based on feature B: -7.398379811549594"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 47,
-        "common_name": "Hama_-3_8",
-        "scientific_name": "Species_0_46",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-3.109836312971555, 8.722592378405045]",
-        "symptoms": [
-            "Symptom based on feature A: -3.109836312971555",
-            "Symptom based on feature B: 8.722592378405045"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 0"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 48,
-        "common_name": "Hama_-5_-6",
-        "scientific_name": "Species_2_47",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [-5.964225073449196, -6.551358483616262]",
-        "symptoms": [
-            "Symptom based on feature A: -5.964225073449196",
-            "Symptom based on feature B: -6.551358483616262"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 2"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 49,
-        "common_name": "Hama_3_2",
-        "scientific_name": "Species_1_48",
-        "pest_type": "Nematoda",
-        "affected_parts": [
-            "Akar",
-            "Batang"
-        ],
-        "description": "Generated pest with blob features [3.9629568359221428, 2.5848459727815998]",
-        "symptoms": [
-            "Symptom based on feature A: 3.9629568359221428",
-            "Symptom based on feature B: 2.5848459727815998"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
-        }
-    },
-    {
-        "id": 50,
-        "common_name": "Hama_5_1",
-        "scientific_name": "Species_1_49",
-        "pest_type": "Jamur",
-        "affected_parts": [
-            "Akar",
-            "Daun"
-        ],
-        "description": "Generated pest with blob features [5.001514861275735, 1.3280499293356076]",
-        "symptoms": [
-            "Symptom based on feature A: 5.001514861275735",
-            "Symptom based on feature B: 1.3280499293356076"
-        ],
-        "image_url": "https://example.com/image.jpg",
-        "control_methods": {
-            "organic": [
-                "Organic method for type 1"
-            ],
-            "chemical": [
-                "Chemical pesticide recommended"
-            ]
+            "organic": ["Pengeringan optimal"],
+            "chemical": ["Fumigasi"]
         }
     }
 ]
