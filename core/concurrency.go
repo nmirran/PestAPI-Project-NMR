@@ -5,18 +5,19 @@ import (
 	"pestapi/model"
 )
 
-func searchWorker(keyword string, pests []model.Pest, resultChan chan model.Pest, done chan bool) {
+func searchWorker(keyword string, pests []model.Pest, resultChan chan<- model.Pest, done chan<- struct{}) {
 	for _, p := range pests {
 		if strings.Contains(strings.ToLower(p.CommonName), strings.ToLower(keyword)){
 			resultChan <- p
 		}
 	}
-	done <- true
+	done <- struct{}{}
 }
 
-func SearchFast(keywoard string) []model.Pest {
+func SearchFast(keyword string) []model.Pest {
 	pests := PestStore.GetAll()
 
+	// Divide into 4 chunks 
 	chunkSize := (len(pests) + 3) / 4
 	parts := [][]model.Pest{}
 	for i := 0; i < len(pests); i+= chunkSize {
@@ -27,14 +28,16 @@ func SearchFast(keywoard string) []model.Pest {
 		parts = append(parts, pests[i:end])
 	}
 
-	resultChan := make(chan model.Pest)
-	doneChan := make(chan bool)
+	resultChan := make(chan model.Pest, 100)
+	doneChan := make(chan struct{}, len(parts))
+
 	for _, part := range parts {
-		go searchWorker(keywoard, part, resultChan, doneChan)
+		go searchWorker(keyword, part, resultChan, doneChan)
 	}
 	results := []model.Pest{}
 	doneCount := 0
 	totalWorkers := len(parts)
+	
 	for {
 		select {
 		case p := <-resultChan:

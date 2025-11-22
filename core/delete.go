@@ -1,5 +1,9 @@
 package core
 
+import (
+    "pestapi/model"
+)
+
 func DeletePest(id int) {
     pests := PestStore.GetAll()
     newList := []model.Pest{}

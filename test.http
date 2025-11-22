@@ -1,0 +1,33 @@
+# POST http://localhost:8080/pests/add
+# Content-Type: application/json
+
+# {
+#   "id": 33,
+#   "common_name": "Hama Uji Coba",
+#   "scientific_name": "Testus Testing",
+#   "pest_type": "Serangga",
+#   "affected_parts": ["Daun"],
+#   "description": "Hama untuk testing",
+#   "symptoms": ["Daun rusak"],
+#   "control_methods": {
+#     "organic": ["Semprot air"],
+#     "chemical": ["Insektisida test"]
+#   }
+# }
+
+# PUT http://localhost:8080/pests/update?id=33
+# Content-Type: application/json
+
+# {
+#   "id" : 33,  
+#   "common_name": "Hama Updated",
+#   "scientific_name": "Testus Update",
+#   "pest_type": "Serangga",
+#   "affected_parts": ["Daun", "Akar"],
+#   "description": "Sudah diupdate nih",
+#   "symptoms": ["Daun rusak parah"],
+#   "control_methods": {
+#     "organic": ["Air panas"],
+#     "chemical": ["Insektisida Update"]
+#   }
+# }

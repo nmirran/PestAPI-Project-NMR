@@ -1,6 +1,9 @@
 package core
 
-import "pestapi/model"
+import (
+    "errors"
+    "pestapi/model"
+)
 
 // MUTABLE update
 func UpdatePest(id int, payload model.Pest) error {

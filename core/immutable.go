@@ -4,8 +4,8 @@ import "pestapi/model"
 
 func UpdateCommonNameImmutable(id int, newName string) []model.Pest {
 	original	:= PestStore.GetAll()
-	updated := make([]model.Pest, len(original))
-	copy(updated, original)
+	updated := DeepCopyPests(original)
+	
 	for i, p := range updated {
 		if p.ID == id {
 			updated[i].CommonName = newName
@@ -14,22 +14,27 @@ func UpdateCommonNameImmutable(id int, newName string) []model.Pest {
 	}
 	return updated
 }
+
 func RemovePestImmutable(id int) []model.Pest {
 	original := PestStore.GetAll()
-	result := []model.Pest{}
+	result := make([]model.Pest, 0, len(original))
 
 	for _, p := range original {
 		if p.ID != id {
 			result = append(result, p)
 		}
 	}
-
 	return result
 }
+
 func AddPestImmutable(newPest model.Pest) []model.Pest {
 	original := PestStore.GetAll()
-	return append(append([]model.Pest{}, original...), newPest)
+	result := make([]model.Pest, 0, len(original)+1)
+	result = append(result, original...)
+	result = append(result, newPest)
+	return result
 }
+
 func DeepCopyPests(pest []model.Pest) []model.Pest {
 	copyList := make([]model.Pest, len(pest))
 	for i, p := range pest {
@@ -41,7 +46,6 @@ func DeepCopyPests(pest []model.Pest) []model.Pest {
 			AffectedParts:  append([]string{}, p.AffectedParts...),
 			Description:    p.Description,
 			Symptoms:       append([]string{}, p.Symptoms...),
-			ImageURL:       p.ImageURL,
 			ControlMethods: model.ControlMethods{
 				Organic:  append([]string{}, p.ControlMethods.Organic...),
 				Chemical: append([]string{}, p.ControlMethods.Chemical...),

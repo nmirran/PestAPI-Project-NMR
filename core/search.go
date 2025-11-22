@@ -7,7 +7,8 @@ import (
 
 // Search Functional
 func SearchKeyword(keyword string) []model.Pest {
+	kw := strings.ToLower(keyword)
 	return PestStore.Filter(func(p model.Pest) bool {
-		return strings.Contains(strings.ToLower(p.CommonName), strings.ToLower(keyword))
+		return strings.Contains(strings.ToLower(p.CommonName), kw)
 	})
 }

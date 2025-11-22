@@ -7,12 +7,12 @@
         "affected_parts": ["Akar"],
         "description": "Nematoda parasit yang menyerang akar kopi, menyebabkan kerusakan jaringan akar.",
         "symptoms": ["Akar menghitam", "Pertumbuhan terhambat", "Daun menguning"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Rotasi tanaman", "Pupuk organik"],
             "chemical": ["Nematicide"]
         }
     },
+
     {
         "id": 2,
         "common_name": "Busuk Akar Hitam",
@@ -21,13 +21,11 @@
         "affected_parts": ["Akar"],
         "description": "Penyakit busuk akar yang menyebabkan kematian tanaman.",
         "symptoms": ["Akar hitam busuk", "Tanaman layu mendadak"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Perbaikan drainase"],
             "chemical": ["Fungisida sistemik"]
         }
     },
-
 
     {
         "id": 3,
@@ -37,14 +35,11 @@
         "affected_parts": ["Perakaran dangkal"],
         "description": "Cacing nematoda pembentuk bintil pada akar dangkal.",
         "symptoms": ["Pembengkakan akar dangkal", "Tanaman kerdil"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Kompos matang"],
             "chemical": ["Karbofuran"]
         }
     },
-
-
 
     {
         "id": 4,
@@ -54,12 +49,12 @@
         "affected_parts": ["Batang utama"],
         "description": "Serangga yang menggerek batang dan merusak jaringan kayu.",
         "symptoms": ["Serbuk kayu keluar dari lubang", "Cabang mati"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Perangkap feromon"],
             "chemical": ["Klorpirifos"]
         }
     },
+
     {
         "id": 5,
         "common_name": "Kanker Batang Kopi (Upas Merah)",
@@ -68,14 +63,11 @@
         "affected_parts": ["Batang utama"],
         "description": "Penyakit jamur yang menyebabkan kerusakan kulit batang dan kematian cabang.",
         "symptoms": ["Kerak merah muda", "Kulit batang terkelupas"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pemangkasan"],
             "chemical": ["Fungisida tembaga"]
         }
     },
-
-
 
     {
         "id": 6,
@@ -85,12 +77,12 @@
         "affected_parts": ["Cabang primer", "Cabang sekunder"],
         "description": "Penyakit yang menyebabkan kematian cabang bertahap.",
         "symptoms": ["Cabang mengering", "Daun berguguran"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Sanitasi kebun"],
             "chemical": ["Fungisida sistemik"]
         }
     },
+
     {
         "id": 7,
         "common_name": "Kepik Pengisap Cabang",
@@ -99,14 +91,11 @@
         "affected_parts": ["Cabang primer", "Pucuk"],
         "description": "Serangga penghisap getah cabang muda.",
         "symptoms": ["Bercak hitam", "Pucuk mengering"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Neem oil"],
             "chemical": ["Imidakloprid"]
         }
     },
-
-
 
     {
         "id": 8,
@@ -116,12 +105,12 @@
         "affected_parts": ["Daun muda"],
         "description": "Penyakit bercak daun yang sering menyerang daun muda.",
         "symptoms": ["Bercak coklat", "Nekrosis"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pemupukan berimbang"],
             "chemical": ["Mankozeb"]
         }
     },
+
     {
         "id": 9,
         "common_name": "Kutu Hijau Kopi",
@@ -130,14 +119,11 @@
         "affected_parts": ["Daun muda"],
         "description": "Kutu penghisap cairan daun, menyebabkan pertumbuhan lambat.",
         "symptoms": ["Daun keriting", "Honeydew (getah lengket)"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Larutan sabun"],
             "chemical": ["Deltametrin"]
         }
     },
-
-
 
     {
         "id": 10,
@@ -147,12 +133,12 @@
         "affected_parts": ["Daun tua"],
         "description": "Penyakit paling merusak pada daun tua kopi.",
         "symptoms": ["Bercak oranye", "Daun gugur"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Naungan optimal"],
             "chemical": ["Fungisida tembaga"]
         }
     },
+
     {
         "id": 11,
         "common_name": "Tungau Merah Kopi",
@@ -161,14 +147,11 @@
         "affected_parts": ["Daun tua"],
         "description": "Tungau perusak jaringan daun tua.",
         "symptoms": ["Daun menguning", "Bercak merah"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Siram air"],
             "chemical": ["Abamektin"]
         }
     },
-
-
 
     {
         "id": 12,
@@ -178,12 +161,12 @@
         "affected_parts": ["Bunga kopi"],
         "description": "Penyakit yang menyerang bunga kopi sebelum pembuahan.",
         "symptoms": ["Bunga coklat", "Bunga rontok"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pemangkasan"],
             "chemical": ["Fungisida sistemik"]
         }
     },
+
     {
         "id": 13,
         "common_name": "Thrips Kopi",
@@ -192,14 +175,11 @@
         "affected_parts": ["Bunga kopi"],
         "description": "Hama kecil yang merusak bunga dan daun.",
         "symptoms": ["Bunga kusam", "Kelopak tergores"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Feromon"],
             "chemical": ["Spinetoram"]
         }
     },
-
-
 
     {
         "id": 14,
@@ -209,12 +189,12 @@
         "affected_parts": ["Buah muda"],
         "description": "Penyakit yang menyerang buah muda sebelum matang.",
         "symptoms": ["Bercak hitam", "Buah rontok"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Sanitasi kebun"],
             "chemical": ["Fungisida sistemik"]
         }
     },
+
     {
         "id": 15,
         "common_name": "Penggerek Buah Kopi (PBKo)",
@@ -223,14 +203,11 @@
         "affected_parts": ["Buah matang"],
         "description": "Hama paling berbahaya yang menggerek buah matang kopi.",
         "symptoms": ["Lubang kecil di buah", "Biji rusak"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Perangkap alkohol"],
             "chemical": ["Fipronil"]
         }
     },
-
-
 
     {
         "id": 16,
@@ -240,7 +217,6 @@
         "affected_parts": ["Biji kopi (post-harvest)"],
         "description": "Penyakit pascapanen yang menyerang biji kopi.",
         "symptoms": ["Biji berjamur", "Aroma busuk"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pengeringan cepat"],
             "chemical": ["Fumigasi"]
@@ -255,7 +231,6 @@
         "affected_parts": ["Akar", "Batang utama"],
         "description": "Bakteri yang menyebabkan layu cepat pada tanaman kopi.",
         "symptoms": ["Daun layu tiba-tiba", "Batang menghitam"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Sanitasi kebun"],
             "chemical": ["Bakterisida tembaga"]
@@ -270,7 +245,6 @@
         "affected_parts": ["Perakaran dangkal", "Batang bawah"],
         "description": "Jamur penyebab busuk pangkal batang kopi.",
         "symptoms": ["Batang bawah retak", "Akar membusuk"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Perbaikan drainase"],
             "chemical": ["Fosetyl-Al"]
@@ -285,7 +259,6 @@
         "affected_parts": ["Batang utama"],
         "description": "Jamur yang membentuk miselium putih pada batang.",
         "symptoms": ["Miselium putih seperti kapas", "Batang busuk"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pangkas bagian terinfeksi"],
             "chemical": ["Fungisida sistemik"]
@@ -300,7 +273,6 @@
         "affected_parts": ["Daun muda", "Daun tua"],
         "description": "Serangga penyebab klorosis daun dan menularkan virus.",
         "symptoms": ["Daun menguning", "Jelaga hitam"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Perangkap kuning"],
             "chemical": ["Abamektin"]
@@ -315,7 +287,6 @@
         "affected_parts": ["Daun muda"],
         "description": "Virus yang menyebabkan daun keriting dan pertumbuhan terhambat.",
         "symptoms": ["Daun keriting", "Ukuran daun mengecil"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pengendalian kutu daun"],
             "chemical": ["Insektisida ringan"]
@@ -330,7 +301,6 @@
         "affected_parts": ["Daun muda", "Pucuk"],
         "description": "Tungau kecil yang merusak daun muda dan pucuk.",
         "symptoms": ["Daun keriting", "Pucuk menghitam"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Aplikasi ekstrak bawang putih"],
             "chemical": ["Propargite"]
@@ -345,7 +315,6 @@
         "affected_parts": ["Daun tua", "Daun muda"],
         "description": "Penyakit bercak yang meninggalkan pola bulat bersusun.",
         "symptoms": ["Bercak konsentris", "Daun rontok"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pemangkasan"],
             "chemical": ["Klorotalonil"]
@@ -360,7 +329,6 @@
         "affected_parts": ["Buah muda", "Buah matang"],
         "description": "Lalat buah yang bertelur pada buah kopi.",
         "symptoms": ["Buah busuk", "Larva di dalam buah"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Perangkap protein"],
             "chemical": ["Spinosad"]
@@ -375,7 +343,6 @@
         "affected_parts": ["Buah muda", "Buah matang"],
         "description": "Jamur penyebab bercak hitam besar pada buah.",
         "symptoms": ["Buah menghitam", "Buah mengeras"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Sanitasi lahan"],
             "chemical": ["Azoxystrobin"]
@@ -390,7 +357,6 @@
         "affected_parts": ["Buah matang"],
         "description": "Bakteri penyebab busuk buah pada fase matang.",
         "symptoms": ["Buah berlendir", "Aroma asam"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Panen cepat"],
             "chemical": ["Bakterisida tembaga"]
@@ -405,7 +371,6 @@
         "affected_parts": ["Biji kopi (post-harvest)"],
         "description": "Jamur yang menyebabkan biji hitam dan berjamur.",
         "symptoms": ["Biji menghitam", "Tekstur lembab"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pengeringan cepat"],
             "chemical": ["Fumigasi"]
@@ -420,7 +385,6 @@
         "affected_parts": ["Kulit buah", "Buah matang"],
         "description": "Jamur yang menyerang kulit buah kopi.",
         "symptoms": ["Kulit buah pecah", "Bercak putih"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Rotasi tanaman"],
             "chemical": ["Fungisida tembaga"]
@@ -435,7 +399,6 @@
         "affected_parts": ["Daun tua"],
         "description": "Jamur penyebab bercak hitam pada daun tua.",
         "symptoms": ["Bercak gelap", "Daun mengering"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pemangkasan"],
             "chemical": ["Mankozeb"]
@@ -450,7 +413,6 @@
         "affected_parts": ["Biji kopi (post-harvest)"],
         "description": "Jamur pascapanen yang tumbuh pada kondisi lembab.",
         "symptoms": ["Biji kehijauan", "Aroma apek"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Gudang kering"],
             "chemical": ["Fumigasi ringan"]
@@ -465,7 +427,6 @@
         "affected_parts": ["Daun tua", "Cabang sekunder"],
         "description": "Serangga pengisap yang menghasilkan jelaga hitam.",
         "symptoms": ["Daun menguning", "Jelaga pada daun"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Sabun insektisida"],
             "chemical": ["Imidakloprid"]
@@ -480,7 +441,6 @@
         "affected_parts": ["Biji kopi (post-harvest)"],
         "description": "Jamur penghasil aflatoksin pada biji pascapanen.",
         "symptoms": ["Biji hitam pekat", "Aroma tidak sedap"],
-        "image_url": "",
         "control_methods": {
             "organic": ["Pengeringan optimal"],
             "chemical": ["Fumigasi"]

@@ -9,7 +9,12 @@ import (
 func SearchConcurrentOptimized(keyword string) []model.Pest {
     pests := PestStore.GetAll()
     workers := 4
-    chunkSize := len(pests) / workers
+    if len(pests) < workers {
+        workers = 1
+    }
+
+    chunkSize := (len(pests) + workers - 1) / workers
+    loweredKeyword := strings.ToLower(keyword)
 
     var wg sync.WaitGroup
     resultChan := make(chan model.Pest, len(pests))
@@ -17,19 +22,21 @@ func SearchConcurrentOptimized(keyword string) []model.Pest {
     for i := 0; i < workers; i++ {
         start := i * chunkSize
         end := start + chunkSize
-        if i == workers-1 {
+        if end > len(pests) {
             end = len(pests)
         }
 
+        part := pests[start:end]
         wg.Add(1)
-        go func(part []model.Pest) {
+
+        go func(ps []model.Pest) {
             defer wg.Done()
-            for _, p := range part {
-                if strings.Contains(strings.ToLower(p.CommonName), strings.ToLower(keyword)) {
+            for _, p := range ps {
+                if strings.Contains(strings.ToLower(p.CommonName), loweredKeyword) {
                     resultChan <- p
                 }
             }
-        }(pests[start:end])
+        }(part)
     }
 
     wg.Wait()
