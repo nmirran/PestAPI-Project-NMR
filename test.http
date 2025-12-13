@@ -15,19 +15,19 @@
 #   }
 # }
 
-# PUT http://localhost:8080/pests/update?id=33
-# Content-Type: application/json
+PUT http://localhost:8080/pests/update?id=33
+Content-Type: application/json
 
-# {
-#   "id" : 33,  
-#   "common_name": "Hama Updated",
-#   "scientific_name": "Testus Update",
-#   "pest_type": "Serangga",
-#   "affected_parts": ["Daun", "Akar"],
-#   "description": "Sudah diupdate nih",
-#   "symptoms": ["Daun rusak parah"],
-#   "control_methods": {
-#     "organic": ["Air panas"],
-#     "chemical": ["Insektisida Update"]
-#   }
-# }
+{
+  "id" : 33,  
+  "common_name": "Hama Updated",
+  "scientific_name": "Testus Update",
+  "pest_type": "Serangga",
+  "affected_parts": ["Daun", "Akar"],
+  "description": "Sudah diupdate nih",
+  "symptoms": ["Daun rusak parah"],
+  "control_methods": {
+    "organic": ["Air panas"],
+    "chemical": ["Insektisida Update"]
+  }
+}

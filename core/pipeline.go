@@ -3,6 +3,7 @@ package core
 import (
 	"pestapi/model"
 	"sort"
+	"strings"
 )
 
 type PestSimple struct {
@@ -19,10 +20,11 @@ func Pipeline[T any](data T, steps ...func(T) T) T {
 }
 
 func FilterByType(t string) func([]model.Pest) []model.Pest {
+	normalized := strings.ToLower(strings.TrimSpace(t))
 	return func(pests []model.Pest) []model.Pest {
 		result := []model.Pest{}
 		for _, p := range pests {
-			if p.PestType == t {
+			if strings.ToLower(strings.TrimSpace(p.PestType)) == normalized {
 				result = append(result, p)
 			}
 		}
@@ -86,7 +88,7 @@ func PipelineAdvanced(pests []model.Pest, typeVal, part, sortField, order string
     }
 
     // limit
-    if limit > 0 && limit < len(pests) {
+    if limit > 0 {
         steps = append(steps, Limit(limit))
     }
 

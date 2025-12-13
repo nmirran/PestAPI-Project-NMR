@@ -163,7 +163,9 @@ func FilterByPartHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "part parameter is required", http.StatusBadRequest)
 		return
 	}
-    result := core.FilterByPart(part)
+    pests := core.PestStore.GetAll()
+	result := core.FilterByPart(part)(pests)
+
 	writeJSON(w, http.StatusOK, result)
 }
 
@@ -174,7 +176,9 @@ func FilterByTypeHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "type parameter is required", http.StatusBadRequest)
 		return
 	}
-    result := core.FilterByTypeValue(t)
+    pests := core.PestStore.GetAll()
+	result := core.FilterByTypeValue(t)(pests)
+
 	writeJSON(w, http.StatusOK, result)
 }
 
@@ -228,9 +232,9 @@ func UpdatePestHandler(w http.ResponseWriter, r *http.Request) {
 
 // SEARCH SCIENTIFIC
 func SearchScientificHandler(w http.ResponseWriter, r *http.Request) {
-    keyword := r.URL.Query().Get("key")
+    keyword := r.URL.Query().Get("keyword")
 	if keyword == "" {
-		http.Error(w, "key parameter is required", http.StatusBadRequest)
+		http.Error(w, "keyword parameter is required", http.StatusBadRequest)
 		return
 	}
     result := core.SearchScientific(keyword)
